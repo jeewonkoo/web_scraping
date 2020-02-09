@@ -18,4 +18,5 @@ rate = div.find("span", {"class": "spt_con up"}).text
 print(str(rate[3:]))
 
 
-
+### 미국USD
+### 1,193.50  전일대비상승9.50 (+0.8%) 
