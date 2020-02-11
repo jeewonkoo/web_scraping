@@ -13,10 +13,17 @@ country = div.find("em", {"class": "t_nm"}).text
 
 print(country)
 
-rate = div.find("span", {"class": "spt_con up"}).text
+rate_dw = div.find("span", {"class": "spt_con dw"})
 
-print(str(rate[3:]))
+rate_up = div.find("span", {"class": "spt_con up"})
 
+if rate_up == None :
+    currency_dw = rate_dw.find("strong").text
+    print(currency_dw)
+else :
+    currency_up = rate_up.find("strong").text
+    print(currency_up)
 
 ### 미국USD
-### 1,193.50  전일대비상승9.50 (+0.8%) 
+### 1,183.00
+
